@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/light_background"
+    tools:context=".fragments.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="60dp"
+        android:id="@+id/userImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/add_user"
+        android:layout_gravity="center"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/white"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:startIconDrawable="@drawable/ic_person"
+            app:counterMaxLength="20"
+            app:boxStrokeColor="@color/purple_700"
+            app:endIconTint="@color/red"
+            android:textColorHint="@color/purple_custom"
+            app:hintTextColor="@color/purple_700"
+            app:startIconTint="@color/purple_custom"
+            app:endIconMode="clear_text"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="21"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            app:endIconMode="clear_text"
+            app:boxStrokeColor="@color/purple_700"
+            app:endIconTint="@color/red"
+            android:textColorHint="@color/purple_custom"
+            app:hintTextColor="@color/purple_700"
+            app:startIconTint="@color/purple_custom"
+            app:counterMaxLength="250"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLength="251"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:boxStrokeColor="@color/purple_700"
+            app:endIconTint="@color/purple_700"
+            android:textColorHint="@color/purple_custom"
+            app:hintTextColor="@color/purple_700"
+            app:startIconTint="@color/purple_custom"
+            app:counterMaxLength="8"
+            app:endIconMode="password_toggle"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="9"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24"
+            app:prefixText="+962"
+            app:boxStrokeColor="@color/purple_700"
+            app:endIconTint="@color/red"
+            android:textColorHint="@color/purple_custom"
+            app:hintTextColor="@color/purple_700"
+            app:startIconTint="@color/purple_custom"
+            app:counterMaxLength="9"
+            app:endIconMode="clear_text"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <Button
+                android:id="@+id/update_btn"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:text="Update"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

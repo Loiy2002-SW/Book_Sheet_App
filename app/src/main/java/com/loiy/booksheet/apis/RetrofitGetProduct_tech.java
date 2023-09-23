@@ -1,0 +1,39 @@
+package com.loiy.booksheet.apis;
+
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+public class RetrofitGetProduct_tech {
+
+    //declaring an instance of RetrofitGetProduct_tech.
+    private static RetrofitGetProduct_tech instance = null;
+
+    //declaring an instance of ApiServices.
+    private ApiServices myAPIServices;
+
+    //Zero-parameter constructor to initialize the ApiServices instance.
+    private RetrofitGetProduct_tech() {
+
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(ApiUrl.GET_TECH)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        myAPIServices = retrofit.create(ApiServices.class);
+
+    }
+
+    //getInstance to provide a singleton pattern(that's why we define the constructor as private).
+    public static synchronized RetrofitGetProduct_tech getInstance() {
+        if (instance == null) {
+            instance = new RetrofitGetProduct_tech();
+        }
+        return instance;
+    }
+
+    //getMyApi method to get the  ApiServices instance that we initialized in the constructor.
+    public ApiServices getMyApi() {
+        return myAPIServices;
+    }
+
+
+}//end of RetrofitGetProduct_tech class.

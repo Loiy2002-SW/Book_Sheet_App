@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Book Sheet</string>
+
+    <string name="login_textView">Login Screen</string>
+    <string name="signup_textView">SignUp Screen</string>
+    <string name="forgetPass_textView">Forget Password Screen</string>
+
+    <string name="userName_text">Username</string>
+    <string name="emailAddress_text">Email address</string>
+    <string name="password_text">Password</string>
+    <string name="reEnterPassword_text">Re-enter Password</string>
+    <string name="phoneNumber_text">Phone number</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="forgetPass_button">Forget password</string>
+
+    <string name="doNotHaveAccount_textView">Don\'t have an account?</string>
+
+    <string name="login_button">Login</string>
+    <string name="createAccount_button">Create one </string>
+    <string name="create_button">Create </string>
+    <string name="reSetPass_button">Reset</string>
+    <string name="emptyEmail_errorMessage">Email address should not be empty</string>
+    <string name="emptyPass_errorMessage">Password should not be empty</string>
+    <string name="emailFormat_errorMessage">Wrong email format!</string>
+    <string name="passLength_errorMessage">Password length should be 8</string>
+    <string name="emptyPhone_errorMessage">Phone number should not be empty</string>
+    <string name="passNotMatch_errorMessage">Passwords not match</string>
+    <string name="phoneFormat_errorMessage">Invalid phone number</string>
+    <string name="emptyName_errorMessage">Username should not be empty</string>
+    <string name="onFailure_toast">Something went wrong, try again</string>
+    <string name="welcome_toast">Welcome</string>
+    <string name="invalidEmailPass_toast">Invalid email or password</string>
+
+    <string name="tech_title">Tech</string>
+    <string name="self_development_title">Self_Dev</string>
+    <string name="novel_title">Novels</string>
+    <string name="homeScreen">Home</string>
+    <string name="aboutUs1">Book sheet will help you read and download your favorite books.</string>
+    <string name="aboutUs2">In Book sheet app you will find the Top_Rating books also you can choose the books type(Technology, Self-development and novels).</string>
+    <string name="aboutUs3">You also can add the books you liked to your wish list so you can easily find them later.</string>
+    <string name="contactUs1">Developer name:\nLoiy Al-hasan</string>
+    <string name="contactUs2">Email: loiy@gamil.com</string>
+    <string name="contactUs3">Phone number: 0777788889</string>
+    <string name="contactUs4">LinkedIn: ********</string>
+    <string name="wishList">Wish List</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="aboutUs">About Us</string>
+    <string name="logout">Logout</string>
+
+
+</resources>
