@@ -7,7 +7,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,9 +22,8 @@ import com.loiy.booksheet.fragments.LogoutFragment;
 import com.loiy.booksheet.fragments.ProfileFragment;
 import com.loiy.booksheet.fragments.SettingFragment;
 import com.loiy.booksheet.fragments.WishListFragment;
-import com.loiy.booksheet.security.LoginScreen;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeScreen extends AppCompatActivity {
 
 
     //declaring variables.
@@ -216,9 +214,9 @@ public class MainActivity extends AppCompatActivity {
     //setHeaderInfo method will set the user information to the navigation drawer using SharedPreferences.
     public void setHeaderInfo() {
 
-        String name = SharedPrefManager.getInstance(MainActivity.this).getUsers().getName();
-        String email = SharedPrefManager.getInstance(MainActivity.this).getUsers().getEmail();
-        String phone = SharedPrefManager.getInstance(MainActivity.this).getUsers().getPhone();
+        String name = SharedPrefManager.getInstance(HomeScreen.this).getUsers().getName();
+        String email = SharedPrefManager.getInstance(HomeScreen.this).getUsers().getEmail();
+        String phone = SharedPrefManager.getInstance(HomeScreen.this).getUsers().getPhone();
 
         navUsername.setText(name);
         navEmail.setText(email);

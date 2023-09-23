@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputLayout;
-import com.loiy.booksheet.MainActivity;
+import com.loiy.booksheet.HomeScreen;
 import com.loiy.booksheet.R;
 import com.loiy.booksheet.SharedPref.SharedPrefManager;
 import com.loiy.booksheet.apis.RetrofitLogIn;
@@ -98,8 +98,8 @@ public class LoginScreen extends AppCompatActivity {
 
                                             if(!response.body().getError()){
 
-                                                //the entered data are ture so now MainActivity will be opened
-                                                Intent i = new Intent(LoginScreen.this, MainActivity.class);
+                                                //the entered data are ture so now HomeScreen will be opened
+                                                Intent i = new Intent(LoginScreen.this, HomeScreen.class);
 
                                                 startActivity(i);
 
@@ -109,7 +109,7 @@ public class LoginScreen extends AppCompatActivity {
                                                 //store the user data in an object of User
                                                  User user = new User((int)response.body().getUser().getId(),response.body().getUser().getName(),response.body().getUser().getEmail(),response.body().getUser().getPassword(),(String)response.body().getUser().getPhone());
 
-                                                //store the User object using SharedPreferences so the next time the user will directly access MainActivity
+                                                //store the User object using SharedPreferences so the next time the user will directly access HomeScreen
                                                  SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
 
                                                 //finish the LoginScreen activity

@@ -50,7 +50,7 @@ public class SplashScreen extends AppCompatActivity {
 
                 }else {
 
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                     startActivity(intent);
                     finish();
 
